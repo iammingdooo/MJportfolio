@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+#fullpage {
+
+    background: url(../img/main_visual\ \(4\).png) 0 0 / cover no-repeat;
+}
+
+#fullpage .section .main_visual {
+    height: 100vh;
+
+}
+
+#fullpage .section .main_visual header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    background-color: #d8f1ffbb;
+    z-index: 999999;
+}
+
+#fullpage .section .main_visual header .inner {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+#fullpage .section .main_visual header .inner nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 2.4rem;
+}
+
+#fullpage .section .main_visual header .inner nav ul li:hover {
+    color: #23B0FF;
+}
+
+#fullpage .section .main_visual header .inner h1 {
+    width: 90px;
+    height: 60px;
+}
+
+#fullpage .main_visual header .inner h1 a img {
+    width: 100%;
+}
+
+#fullpage .section .main_visual figure {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.fp-warning, .fp-watermark a{
+    display: none;
+}
+/* 🎈🎈 web*/
+.web {
+
+    padding: 80px 0;
+    background: url(../img/web_background.png) center center/ cover no-repeat;
+
+}
+
+.web .inner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.web .inner h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.web .inner .list{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.web .inner .list .item {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    padding: 15px 0;
+}
+
+.web .inner .list .item h2 {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.web .inner .list .item>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web .inner .list .item>div .item_left {
+    margin-right: 15px;
+}
+
+.web .inner .list .item>div .item_right p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.web .inner .list .item>div .item_right ul li {
+    display: inline-block;
+    border: 3px solid #23B0FF;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 20px;
+    color: #23B0FF;
+    font-weight: 500;
+}
+
+.web .inner .list .item>div .item_right ul li:hover {
+    background-color: #23B0FF;
+    color: #fff;
+}
+
+/* 🎈🎈🎈 design*/
+.design {
+
+    padding: 80px 0;
+    background: url(../img/summer.png)center center /cover no-repeat;
+
+}
+
+.design .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.design .inner h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.design .inner ul {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.design .inner ul li {
+    display: inline-block;
+    font-size: 2.4rem;
+    border: 3px solid #F4D400;
+    color: #F4D400;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.design .inner ul li.on {
+    background-color: #F4D400;
+    color: #fff;
+}
+
+.design .inner ul li:first-child {
+    margin-right: 30px;
+}
+
+.design .inner .list.on {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.design .inner .list {
+    display: none;
+}
+
+.design .inner .list>div {
+    width: calc(100% / 3 - 12.5px);
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 18.75px;
+}
+
+.design .inner .list>div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.design .inner .list div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🎈🎈🎈profile*/
+.profile {
+    position: relative;
+    height: 100vh;
+
+}
+
+.profile video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.profile .inner .text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile .inner .text h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile .inner .text .list {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 20px 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.profile .inner .text .list .item_left {
+    width: 328px;
+}
+
+.profile .inner .text .list .item_left figure {
+    width: 328px;
+    margin-bottom: 20px;
+}
+
+.profile .inner .text .list .item_left div {
+    width: 100%;
+    text-align: center;
+}
+
+.profile .inner .text .list .item_left div p {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.profile .inner .text .list .item_left .btn a {
+    width: 140px;
+    height: 30px;
+    color: #23B0FF;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    /* a 태그에게 width값 작성 */
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.profile .inner .text .list .item_left .btn {
+    width: 0;
+    transition: 1s;
+    margin: 0 auto;
+    /* 중간으로 옮기기 */
+    transform: translateX(-70px);
+    /* width 140px 의 반만큼 앞으로 이동시켜준다 */
+    /* 약간의 떨림현상 발생 */
+}
+
+.profile .inner .text .list .item_left .btn:hover {
+    border-radius: 20px;
+    background-color: #23B0FF;
+    width: 140px;
+    color: #fff;
+    /* 마우스를 올렸을때 0이였던 width값이 140으로 바뀌어야한다 */
+    /* 채워질 배경색상 작성 */
+    transform: translateX(0);
+    /* 마우스올렸을때 자리 유지 */
+}
+
+.profile .inner .text .list .item_left .btn:hover a {
+    color: #fff;
+}
+
+/* .item_right  */
+.profile .inner .text .list .item_right {
+    width: 553px;
+}
+
+.profile .inner .text .list .item_right .top h2 {
+    font-size: 3rem;
+}
+
+.profile .inner .text .list .item_right .top ul li {
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #D8F1FF;
+    padding: 5px 20px;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+.profile .inner .text .list .item_right .top p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.profile .inner .text .list .item_right .bottom {
+    margin-top: 3rem;
+    width: 552px;
+}
+
+.profile .inner .text .list .item_right .bottom .item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.profile .inner .text .list .item_right .bottom .item strong {
+    font-size: 3rem;
+    color: #23B0FF;
+    margin-right: 50px;
+    width: 150px;
+}
+
+.profile .inner .text .list .item_right .bottom .item:nth-child(3) ul {
+    width: 300px;
+}
+
+.profile .inner .text .list .item_right .bottom .item ul li {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.profile .inner .text .list .item_right .bottom .item:nth-child(3) ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .inner .text .list .item_right .bottom .item:nth-child(3) ul li {
+    width: 69.96px;
+    height: 70px;
+}
+
+.profile .inner .text .list .item_right .bottom .item:nth-child(3) ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

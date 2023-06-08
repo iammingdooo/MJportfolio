@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>김민주 포트폴리오</title>
+
+    <link href="lib/fullpage.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script src="lib/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fancybox.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var myFullpage = new fullpage('#fullpage', {
+                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+
+                scrollBar: true
+
+                /*  responsiveWidth: 2000,
+                 afterResponsive: function (isResponsive) {
+ 
+                 } */
+
+            });
+
+            let design = document.getElementsByClassName('design')[0];
+            let menuBtn = design.getElementsByTagName('li');
+            let designList = design.getElementsByClassName('list');
+
+            for (let i = 0; i < menuBtn.length; i++) {
+                menuBtn[i].onclick = function () {
+                    designList[0].classList.remove('on');
+                    designList[1].classList.remove('on');
+                    designList[i].classList.add('on');
+
+                    menuBtn[0].classList.remove('on');
+                    menuBtn[1].classList.remove('on');
+
+                    menuBtn[i].classList.add('on');
+                }
+            }
+
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <section class="main_visual">
+                <header>
+                    <div class="inner">
+                        <h1>
+                            <a href="#">
+                                <img src="img/logo.png" alt="minjoo logo" />
+                            </a>
+                        </h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Intro</a></li>
+                                <li><a href="#secondPage">Web project</a></li>
+                                <li><a href="#thirdPage">Design</a></li>
+                                <li><a href="#lastPage">Profile</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <figure>
+                    <img src="img/hello.png" alt="intro" />
+                </figure>
+            </section>
+        </div>
+    </div><!-- main_visual end -->
+
+    <!-- 스크롤 섹션 시작 -->
+    <div class="web" id="secondPage">
+        <div class="inner">
+            <h1>
+                <figure>
+                    <img src="img/web1.png" alt="web title">
+                </figure>
+            </h1>
+            <div class="list">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <h2>01 Web</h2>
+                            <div>
+                                <div class="item_left">
+                                    <figure>
+                                        <img src="img/cham.png" alt="cham" />
+                                    </figure>
+                                </div><!-- .item_left end -->
+                                <div class="item_right">
+                                    <p>프로젝트명 : 참도깨비</p>
+                                    <p>프로젝트 구성 : 반응형웹</p>
+                                    <p>프로젝트 참여도 : 100%(디자인 + 퍼블리싱)</p>
+                                    <p>디자인 프로그램 : Figma, Photoshop, Illustrator</p>
+                                    <p>언어 : Html, Css, Javascript</p>
+                                    <ul>
+                                        <li><a href="sub/pdf/chamdokkabi.pdf" target="_blank">process desk</a></li>
+                                        <li><a
+                                                href="https://www.figma.com/file/BKIBp03AM0SZvejWWovqjG/%EC%B0%B8%EB%8F%84%EA%B9%A8%EB%B9%84(%EC%A0%9C%EC%B6%9C)?type=design&t=xbZQ5mHgqtxLjUbi-0"  target="_blank">figma
+                                                wireframe</a></li>
+                                        <li><a href="https://iammingdooo.github.io/chamdokkaebi/"  target="_blank">view website</a></li>
+                                    </ul>
+                                </div><!-- item_right end -->
+                            </div>
+                        </div><!-- .item 1  end -->
+                        <div class="item swiper-slide">
+                            <h2>02 Web</h2>
+                            <div>
+                                <div class="item_left">
+                                    <figure>
+                                        <img src="img/eyegentry.png" alt="cham" />
+                                    </figure>
+                                </div><!-- .item_left end -->
+                                <div class="item_right">
+                                    <p>프로젝트명 : 아이젠트리</p>
+                                    <p>프로젝트 구성 : 기본형웹</p>
+                                    <p>프로젝트 참여도 : 100%(디자인 + 퍼블리싱)</p>
+                                    <p>디자인 프로그램 : Photoshop</p>
+                                    <p>언어 : Html, Css</p>
+                                    <ul>
+                                        <li><a href="sub/pdf/eyegentry.pdf"  target="_blank">process desk</a></li>
+                                        <li><a href="https://iammingdooo.github.io/eyegentry/"  target="_blank">view website</a></li>
+                                    </ul>
+                                </div><!-- item_right end -->
+                            </div>
+                        </div><!-- .item 1  end -->
+
+                        <div class="item swiper-slide">
+                            <h2>03 Web</h2>
+                            <div>
+                                <div class="item_left">
+                                    <figure>
+                                        <img src="img/newtech.png" alt="newtech" />
+                                    </figure>
+                                </div><!-- .item_left end -->
+                                <div class="item_right">
+                                    <p>프로젝트명 : NEWTECH</p>
+                                    <p>프로젝트 구성 : 기본형웹</p>
+                                    <p>프로젝트 참여도 : 100%(디자인 + 퍼블리싱)</p>
+                                    <p>디자인 프로그램 : Photoshop</p>
+                                    <p>언어 : Html, Css</p>
+                                    <ul>
+                                        <!-- <li><a href="#"  target="_blank">process desk</a></li> -->
+                                        <li><a href="https://iammingdooo.github.io/newtech/"  target="_blank">view website</a></li>
+                                    </ul>
+                                </div><!-- item_right end -->
+                            </div>
+
+                        </div><!-- .item 2 -->
+                        <div class="item swiper-slide">
+                            <h2>04 Mobile web</h2>
+                            <div>
+                                <div class="item_left">
+                                    <figure>
+                                        <img src="img/app 2.png" alt="app2" />
+                                    </figure>
+                                </div><!-- .item_left end -->
+                                <div class="item_right">
+                                    <p>프로젝트명 : Manyo</p>
+                                    <p>프로젝트 구성 : 퍼블리싱</p>
+                                    <p>프로젝트 참여도 : 100%(퍼블리싱)</p>
+                                    <p>디자인 프로그램 : Figma</p>
+                                    <p>언어 : Html, Css</p>
+                                    <ul>
+                                        <!-- <li><a href="https://www.figma.com/file/FzHZ9erMjVKXlrHPWkZOdI/%EB%A7%88%EB%85%80%EA%B3%B5%EC%9E%A5-%EB%AA%A8%EB%B0%94%EC%9D%BC?type=design&t=j2zWoZy5QiLYnLeD-0" target="_blank">process desk</a></li> -->
+                                        <li><a href="https://www.figma.com/file/FzHZ9erMjVKXlrHPWkZOdI/%EB%A7%88%EB%85%80%EA%B3%B5%EC%9E%A5-%EB%AA%A8%EB%B0%94%EC%9D%BC?type=design&t=xbZQ5mHgqtxLjUbi-0"  target="_blank">figma wireframe</a></li>
+                                        <li><a href="https://iammingdooo.github.io/manyo/"  target="_blank">view website</a></li>
+                                    </ul>
+                                </div><!-- item_right end -->
+                            </div>
+
+
+                        </div><!-- .item 4 -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="item">
+                    <h2>05 App Design</h2>
+                    <div>
+                        <div class="item_left">
+                            <figure>
+                                <img src="img/kakaotalk1.png" alt="app1" />
+                            </figure>
+                        </div><!-- .item_left end -->
+                        <div class="item_right">
+                            <p>프로젝트명 : Kakao talk</p>
+                            <p>프로젝트 구성 : 앱디자인 + 퍼블리싱</p>
+                            <p>프로젝트 참여도 : 100%(디자인)</p>
+                            <p>디자인 프로그램 : Photoshop, Figma</p>
+                            <p>언어 : Html, Css</p>
+                            <ul>
+                               <!--  <li><a href="https://www.figma.com/file/PO81ZSHJj2nCzE2SQLzwz1/KAKAO?type=design&t=j2zWoZy5QiLYnLeD-0" target="_blank">process desk</a></li> -->
+                                <li><a href="https://www.figma.com/file/PO81ZSHJj2nCzE2SQLzwz1/KAKAO?type=design&node-id=23-583&t=xbZQ5mHgqtxLjUbi-0"  target="_blank">figma wireframe</a></li>
+                                <li><a href="https://iammingdooo.github.io/kakao/"  target="_blank">view website</a></li>
+                            </ul>
+                        </div><!-- item_right end -->
+                    </div>
+
+                </div><!-- .item 3 -->
+                <div class="item">
+                    <h2>06 App Design</h2>
+                    <div>
+                        <div class="item_left">
+                            <figure>
+                                <img src="img/mc2.png" alt="app1" />
+                            </figure>
+                        </div><!-- .item_left end -->
+                        <div class="item_right">
+                            <p>프로젝트명 : 맥도날드</p>
+                            <p>프로젝트 구성 : 앱디자인</p>
+                            <p>프로젝트 참여도 : 100%(디자인)</p>
+                            <p>디자인 프로그램 : Photoshop, Figma</p>
+                            <p>언어 : Html, Css</p>
+                            <ul>
+                                <li><a href="sub/pdf/mcdonald.pdf"  target="_blank">process desk</a></li>
+                                <li><a href="https://www.figma.com/file/dJL3TJyqrCU7gcH1Xq5dQj/%EB%A7%A5%EB%8F%84%EB%82%A0%EB%93%9C?type=design&node-id=0-1&t=xbZQ5mHgqtxLjUbi-0"  target="_blank">figma wireframe</a></li>
+                            </ul>
+                        </div><!-- item_right end -->
+                    </div>
+
+                </div><!-- .item 3 -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </div><!-- web end -->
+
+    <div class="design" id="thirdPage">
+        <div class="inner">
+            <h1>
+                <figure>
+                    <img src="img/design.png" alt="design" />
+                </figure>
+            </h1>
+            <ul class="design_menu">
+                <li class="on"><a href="#" onclick="return false">Photoshop</a></li>
+                <li><a href="#" onclick="return false">Illustrator</a></li>
+            </ul>
+
+            <div class="list on">
+                <div>
+                    <a href="img/photoshop1 .jpg" data-fancybox="images">
+                        <img src="img/photoshop1 .jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/photoshop2.jpg" data-fancybox="images">
+                        <img src="img/photoshop2.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/photoshop3.jpg" data-fancybox="images">
+                        <img src="img/photoshop3.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/photoshop4.jpg" data-fancybox="images">
+                        <img src="img/photoshop4.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/photoshop5.jpg" data-fancybox="images">
+                        <img src="img/photoshop5.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/photoshop6.jpg" data-fancybox="images">
+                        <img src="img/photoshop6.jpg" />
+                    </a>
+                </div>
+            </div><!-- .list on end -->
+
+            <div class="list">
+                <div>
+                    <a href="img/sns_love.jpg" data-fancybox="images">
+                        <img src="img/sns_love.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/sns_spring-breeze.jpg" data-fancybox="images">
+                        <img src="img/sns_spring-breeze.jpg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="img/illust_logo.png" data-fancybox="images">
+                        <img src="img/illust_logo.png" />
+                    </a>
+                </div>
+
+            </div><!-- .list on end -->
+
+        </div><!-- .inner end -->
+    </div><!-- design end -->
+
+    <div class="profile" id="lastPage">
+        <div class="inner">
+            <video autoplay muted loop>
+                <source src="img/profile.mp4" type="video/mp4" />
+            </video>
+            <div class="text">
+                <h1>
+                    <figure>
+                        <img src="img/profile.png" alt="profile" />
+                    </figure>
+                </h1>
+                <div class="list">
+                    <div class="item_left">
+                        <figure>
+                            <img src="img/mjprofile.png" alt="profile" />
+                        </figure>
+                        <div>
+                            <p>김민주</p>
+                            <p>Kim min joo</p>
+                            <p>1997.03.27</p>
+                        </div>
+                        <div class="btn">
+                            <a href="sub/mj/김민주 입사지원서.pdf" target="_blank">이력서 보기</a>
+                        </div>
+                    </div><!-- .item_left -->
+                    <div class="item_right">
+                        <div class="top">
+                            <h2>UX/UI DESIGNER</h2>
+                            <ul>
+                                <li>#열정적인</li>
+                                <li>#친화력</li>
+                                <li>#긍정적인</li>
+                            </ul>
+                            <p>열정적이고 긍정적인 마음으로<br />
+                                꾸준히 발전하는 디자이너가 되겠습니다.</p>
+                        </div><!-- .top end -->
+                        <div class="bottom">
+                            <div class="item">
+                                <strong>Contact</strong>
+                                <ul>
+                                    <li><a href="#">010-4594-4262</a></li>
+                                    <li><a href="#">min_joo--@naver.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <strong>Education</strong>
+                                <ul>
+                                    <li><a href="#">반응형 UX/UI 웹디자인/웹퍼블리셔<br />
+                                            양성과정</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <strong>Skills</strong>
+                                <ul>
+                                    <li>
+                                        <img src="img/photoshop_logo.png" alt="photoshop" />
+                                    </li>
+                                    <li>
+                                        <img src="img/jqurey_logo.png" alt="jquery" />
+                                    </li>
+                                    <li>
+                                        <img src="img/css3_logo.png" alt="css" />
+                                    </li>
+                                    <li>
+                                        <img src="img/illustrator_logo2.png" alt="illustrator" />
+                                    </li>
+                                    <li>
+                                        <img src="img/html_logo.png" alt="html" />
+                                    </li>
+                                    <li>
+                                        <img src="img/javascript_logo.png" alt="javascript" />
+                                    </li>
+                                    <li>
+                                        <img src="img/swiper_logo.png" alt="swiper_logo" />
+                                    </li>
+                                    <li>
+                                        <img src="img/fullpage.png" alt="fullpage" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .bottom end -->
+
+                    </div><!-- .item_right end -->
+                </div><!-- .list end -->
+            </div>
+
+        </div><!-- .inner end -->
+    </div><!-- profile -->
+</body>
+
+</html>
