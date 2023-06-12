@@ -65,12 +65,31 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
+
+            let popWrap = $('.popup_wrap');
+            let popup = $('.popup');
+            let popBg = $('.popup_bg');
+
+            popup.click(function(){
+                popWrap.hide()
+                popBg.hide()
+            })
+
         })
 
     </script>
 </head>
 
 <body>
+    <div class="popup_wrap">
+        <div class="popup">
+            <div>
+                <p>해당 페이지는 <strong>1920px 해상도</strong>에 <br/>최적화 되어있습니다.</p>
+            </div>
+        </div>
+    </div><!-- popup_wrap -->
+    <div class="popup_bg"></div>
+
     <div id="fullpage">
         <div class="section" id="section1">
             <section class="main_visual">
