@@ -1,5 +1,53 @@
 @charset "utf-8";
 
+.popup_wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+    border: 3px solid #333;
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.popup div p {
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.popup::after {
+    content: '';
+    position: absolute;
+    background: url('../img/cancel.png') no-repeat;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+
+}
+
+.popup_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333a1;
+    z-index: 1;
+}
+
 #fullpage {
 
     background: url(../img/main_visual\ \(4\).png) 0 0 / cover no-repeat;
@@ -54,12 +102,15 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.fp-warning, .fp-watermark a{
+
+.fp-warning,
+.fp-watermark a {
     display: none;
 }
+
 /* 🎈🎈 web*/
 .web {
 
@@ -77,10 +128,12 @@
     text-align: center;
     margin-bottom: 80px;
 }
-.web .inner .list{
+
+.web .inner .list {
     border-radius: 20px;
     overflow: hidden;
 }
+
 .web .inner .list .item {
     background-color: #fff;
     border-radius: 20px;
